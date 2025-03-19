@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Luxe Resort | Experience Luxury</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Prince Luxe Resort</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light px-4 py-2 fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#authModal">
+                            Login / Signup
+                        </button>
+                    </li>
+                    
+                </ul>
+                <!-- Dark Mode Toggle Button -->
+                <button id="darkModeToggle" class="btn btn-outline-light ms-3">Dark Mode</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 data-aos="fade-up">Welcome to Prince Luxe Resort</h1>
+            <p data-aos="fade-up" data-aos-delay="300">Luxury & Comfort Awaits You!</p>
+            <a href="#amenities" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="500">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities">
+        <h2 data-aos="fade-up">Exclusive Amenities</h2>
+        <div class="amenities-container">
+            <div class="amenity-card" data-aos="zoom-in">
+                <i class="fas fa-swimming-pool"></i>
+                <h3>Infinity Pool</h3>
+                <p>Relax in our rooftop infinity pool with stunning views.</p>
+            </div>
+            <div class="amenity-card" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-spa"></i>
+                <h3>Luxury Spa</h3>
+                <p>Rejuvenate with world-class spa treatments.</p>
+            </div>
+            <div class="amenity-card" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Fitness Center</h3>
+                <p>State-of-the-art gym with personal trainers.</p>
+            </div>
+            <div class="amenity-card" data-aos="zoom-in" data-aos-delay="600">
+                <i class="fas fa-wifi"></i>
+                <h3>High-Speed WiFi</h3>
+                <p>Stay connected with free ultra-fast WiFi.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="container my-5">
+        <h2 class="text-center mb-4">Our Rooms</h2>
+        <div class="row" id="roomContainer">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://q-xx.bstatic.com/xdata/images/hotel/max500/581496723.jpg?k=0354f3c4f695af7c524b963000c9e926aac1cffb76e7a70506f0bf5643a15a3c&o=" class="card-img-top" alt="Deluxe Room">
+                    <div class="card-body">
+                        <h5 class="card-title">Deluxe Room</h5>
+                        <p class="card-text">Spacious and elegant, perfect for a relaxing stay.</p>
+                        <p class="card-text"><strong>$150/night</strong></p>
+                        <button class="btn btn-primary book-now-btn" data-room="Deluxe Room">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://im.indiatimes.in/content/2024/Apr/Maharani-Suite-at-Umaid-Bhawan-Palace-Jodhpur_6620e784bcd40.jpg?w=1200&h=900&cc=1&webp=1&q=75" class="card-img-top" alt="Executive Suite">
+                    <div class="card-body">
+                        <h5 class="card-title">Executive Suite</h5>
+                        <p class="card-text">Luxurious suite with a private balcony and city view.</p>
+                        <p class="card-text"><strong>$250/night</strong></p>
+                        <button class="btn btn-primary book-now-btn" data-room="Executive Room">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://gemparkooty.com/wp-content/uploads/2021/03/lux-bed-1-717x540.jpeg" class="card-img-top" alt="Presidential Suite">
+                    <div class="card-body">
+                        <h5 class="card-title">Presidential Suite</h5>
+                        <p class="card-text">Luxury experience with premium amenities.</p>
+                        <p class="card-text"><strong>$500/night</strong></p>
+                        <button class="btn btn-primary book-now-btn" data-room="Presidential Room">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Load More Button -->
+        <div class="text-center">
+            <button id="loadMore" class="btn btn-primary">Load More Rooms</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Premium Services</h2>
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <i class="fas fa-concierge-bell"></i>
+                        <h4>24/7 Concierge Service</h4>
+                        <p>Experience VIP treatment with personalized assistance anytime.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <i class="fas fa-spa"></i>
+                        <h4>Luxury Spa & Wellness</h4>
+                        <p>Relax with our world-class spa and wellness services.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <i class="fas fa-glass-cheers"></i>
+                        <h4>Sky Lounge & Bar</h4>
+                        <p>Enjoy breathtaking views with premium cocktails & dining.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers" class="exclusive-offer">
+        <h2>✨ Exclusive Limited-Time Offer! ✨</h2>
+        <p>Hurry up! Offer ends in <span id="offer-timer">24:00:00</span></p>
+        <button id="claim-offer" class="btn-offer">Claim Your Deal</button>
+    </section>
+    
+
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Latest from Our Blog</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-card" data-aos="fade-up">
+                        <img src="https://img.freepik.com/free-photo/leisure-beautiful-health-garden-landscape_1203-4856.jpg?semt=ais_hybrid" alt="Luxury Stay">
+                        <div class="blog-content">
+                            <h3>5 Tips for a Luxurious Resort Stay</h3>
+                            <p>Discover how to make your vacation truly luxurious...</p>
+                            <a href="#" class="btn-read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://img.freepik.com/free-photo/outdoor-with-umbrella-chair_74190-4495.jpg" alt="Beach Resort">
+                        <div class="blog-content">
+                            <h3>Top 10 Beach Resorts in the World</h3>
+                            <p>Explore the most breathtaking beach resorts...</p>
+                            <a href="#" class="btn-read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="400">
+                        <img src="https://img.freepik.com/premium-psd/modern-spa-treatment-room-with-ocean-views-two-massage-tables_514761-14153.jpg" alt="Spa Retreat">
+                        <div class="blog-content">
+                            <h3>The Ultimate Spa Retreat Experience</h3>
+                            <p>Indulge in relaxation with our spa retreat guide...</p>
+                            <a href="#" class="btn-read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Form -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form id="contactForm" class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </section>
+
+   <!--Login / Signup -->
+   <!-- Authentication Modal -->
+<div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-glass">
+            <div class="modal-header border-0">
+                <h5 class="modal-title w-100 text-center fw-bold" id="authModalLabel">Welcome to Luxury Stay</h5>
+                <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Login Form -->
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <input type="email" class="form-control premium-input" id="loginEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control premium-input" id="loginPassword" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 premium-btn">Login</button>
+                </form>
+
+                <!-- Signup Form (Initially Hidden) -->
+                <form id="signupForm" class="d-none">
+                    <div class="mb-3">
+                        <input type="text" class="form-control premium-input" id="signupName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control premium-input" id="signupEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control premium-input" id="signupPassword" placeholder="Create a password" required>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100 premium-btn">Sign Up</button>
+                </form>
+            </div>
+            <div class="modal-footer border-0">
+                <p id="toggleAuthText" class="w-100 text-center">
+                    Don't have an account? <a href="#" id="switchToSignup" class="toggle-link">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Book Now Modal -->
+<div class="modal fade" id="bookNowModal" tabindex="-1" aria-labelledby="bookNowModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bookNowModalLabel">Book Your Room</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>You are booking: <strong id="selectedRoom"></strong></p>
+                <form>
+                    <div class="mb-3">
+                        <label for="guestName" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="guestName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="guestEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="guestEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="checkInDate" class="form-label">Check-In Date</label>
+                        <input type="date" class="form-control" id="checkInDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="checkOutDate" class="form-label">Check-Out Date</label>
+                        <input type="date" class="form-control" id="checkOutDate" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <!-- Premium Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- About Us -->
+            <div class="col-md-3">
+                <h5>🏨 About Us</h5>
+                <p>Experience luxury and comfort at our premium hotel, offering world-class hospitality.</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-3">
+                <h5>📍 Quick Links</h5>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="col-md-3">
+                <h5>📞 Contact Us</h5>
+                <p>📍 Address: 123 Luxury St, Kanpur, India</p>
+                <p>📞 Phone: +91 6307***821</p>
+                <p>📧 Email: PrinceLuxeResort@gmail.com</p>
+            </div>
+            <!-- Social Media -->
+            <div class="col-md-3">
+                <h5>🌍 Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter Subscription -->
+        <div class="newsletter">
+            <h5>📩 Get Exclusive Deals!</h5>
+            <input type="email" placeholder="Enter your email">
+            <button class="subscribe-btn">Subscribe</button>
+        </div>
+        <!-- Payment Methods -->
+        <div class="payment-methods">
+            <h4>We Accept</h4>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+        </div>
+        
+        <!-- Google Map -->
+        <div class="map-container">
+            <iframe src="https://maps.google.com/maps?q=Your+Hotel+Location&output=embed" frameborder="0"></iframe>
+        </div>
+        <!-- Copyright & Back to Top -->
+        <div class="footer-bottom">
+            <p>© 2025 Luxury Hotel | All Rights Reserved</p>
+            <button id="backToTop">🔝 Back to Top</button>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation Speed in milliseconds (1000ms = 1s)
+        once: true // Animation sirf ek baar chalega, scroll back par repeat nahi hoga
+    });
+</script>
+
+</body>
+</html>

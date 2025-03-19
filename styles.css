@@ -1,0 +1,802 @@
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, #1a1a1a, #333); /* Premium gradient */
+    padding: 15px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFD700 !important; /* Gold color for luxury feel */
+    font-family: 'Cinzel', serif; /* Premium font */
+    text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.6); /* Gold glow effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #FFD700 !important; /* Gold on hover */
+    text-shadow: 0px 2px 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Login/Signup Button */
+.navbar .btn-outline-light {
+    border: 2px solid #FFD700;
+    color: #FFD700;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar .btn-outline-light:hover {
+    background: #FFD700;
+    color: black;
+    box-shadow: 0px 4px 15px rgba(255, 215, 0, 0.8);
+}
+
+/* Dark Mode Toggle */
+#darkModeToggle {
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+#darkModeToggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFD700;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background: linear-gradient(135deg, #0d0d0d, #222); /* More premium dark mode */
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .navbar-brand {
+    color: #FFD700 !important;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+}
+
+.dark-mode .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.dark-mode .navbar-nav .nav-link:hover {
+    color: #FFD700 !important;
+    text-shadow: 0px 2px 12px rgba(255, 215, 0, 0.9);
+}
+
+.dark-mode .btn-outline-light {
+    border-color: #FFD700;
+    color: #FFD700;
+}
+
+.dark-mode .btn-outline-light:hover {
+    background: #FFD700;
+    color: black;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url('https://img.freepik.com/free-photo/type-entertainment-complex-popular-resort-with-pools-water-parks-turkey-with-more-than-5-million-visitors-year-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer_146671-18728.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+    animation: slideInDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.hero .btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero .btn-primary {
+    background-color: #ffcc00;
+    border: none;
+    color: #000;
+}
+
+.hero .btn-primary:hover {
+    background-color: #e6b800;
+    transform: scale(1.1);
+}
+
+/* Amenities Section */
+.amenities {
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(45deg, #1a1a1a, #333);
+}
+
+.amenities h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+
+
+.amenities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.amenity-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.amenity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(255, 204, 0, 0.5);
+}
+
+.amenity-card i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+.amenity-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+.amenity-card p {
+    font-size: 1rem;
+    opacity: 0.8;
+    color: #f1f1f1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Card Hover Effect */
+/* Rooms Section Styling */
+#rooms {
+    padding: 60px 0;
+    background: #f8f9fa; /* Light luxury background */
+}
+
+/* Section Title */
+#rooms h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* Title Divider */
+#rooms h2::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #ffcc00;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Room Images */
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Card Body */
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Room Titles */
+.card-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    font-style: italic;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Room Description */
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Price Styling */
+.card-text strong {
+    font-size: 1.4rem;
+    color: #ff9900;
+    font-weight: bold;
+}
+
+/* Book Now Button */
+.book-now-btn {
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.book-now-btn:hover {
+    background: linear-gradient(45deg, #ff9900, #ff6600);
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.4);
+}
+
+/* Load More Button */
+#loadMore {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+#loadMore:hover {
+    background: linear-gradient(45deg, #ff9900, #ff6600);
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.4);
+}
+
+
+/* Services Section */
+#services {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient Background */
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+#services h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Service Card */
+.service-card {
+    background: rgba(255, 255, 255, 0.1); /* Glass Effect */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Icons Styling */
+.service-card i {
+    font-size: 50px;
+    color: #ffd700; /* Gold Color for Luxury Look */
+    margin-bottom: 15px;
+}
+
+/* Service Text */
+.service-card h4 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-card {
+        margin-bottom: 30px;
+    }
+}
+
+/* Glassmorphism Effect */
+.modal-glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields */
+.premium-input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+}
+.premium-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Buttons */
+.premium-btn {
+    border-radius: 50px;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Toggle Link */
+.toggle-link {
+    color: #f8d210;
+    font-weight: bold;
+    cursor: pointer;
+}
+.toggle-link:hover {
+    text-decoration: underline;
+}
+/* Footer Styling */
+.footer {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+.footer-links li {
+    margin-bottom: 10px;
+}
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-links a:hover {
+    color: #f8b400;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-icon {
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+.social-icon:hover {
+    color: #f8b400;
+    transform: scale(1.1);
+}
+/* Newsletter Subscription */
+.newsletter {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #f8b400;
+    border-radius: 5px;
+    outline: none;
+}
+
+.subscribe-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #f8b400;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+    background: #d89b00;
+}
+
+/* Payment Methods */
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.payment-methods i {
+    font-size: 35px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.payment-methods i:hover {
+    color: #f8b400;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.footer-bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#backToTop {
+    padding: 6px 12px;
+    border: none;
+    background: #f8b400;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#backToTop:hover {
+    background: #d89b00;
+}
+
+.exclusive-offer {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 154, 158, 0.8), rgba(250, 208, 196, 0.8));
+    padding: 50px 20px;
+    color: white;
+    border-radius: 12px;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+/* Subtle Gradient Animation */
+.exclusive-offer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 154, 158, 0.4), rgba(250, 208, 196, 0.8), rgba(255, 154, 158, 0.4));
+    animation: moveGradient 6s infinite linear;
+}
+
+@keyframes moveGradient {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.exclusive-offer h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.exclusive-offer p {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+/* Countdown Timer Styling */
+#offer-timer {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffe600;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 8px 14px;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(255, 230, 0, 0.6);
+}
+
+/* Premium Button */
+.btn-offer {
+    background: linear-gradient(45deg, #ff4757, #ff6b81);
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover & Glow Effect */
+.btn-offer:hover {
+    background: linear-gradient(45deg, #e84118, #ff4757);
+    box-shadow: 0 0 15px rgba(255, 71, 87, 0.7);
+    transform: scale(1.05);
+}
+
+/* Click Effect */
+.btn-offer:active {
+    transform: scale(0.95);
+}
+
+
+/* 🏆 Blog Section Styling - Only applies to #blog */
+#blog {
+    padding: 80px 0;
+    text-align: center;
+    background: #f8f9fa; /* Light background for premium feel */
+}
+
+#blog .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333; /* Dark premium look */
+}
+
+/* 🎨 Blog Card Styling */
+#blog .blog-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 100%; /* Makes all cards equal height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 🖼 Image Styling */
+#blog .blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* 📑 Blog Content Styling */
+#blog .blog-content {
+    padding: 20px;
+    flex-grow: 1; /* Ensures equal content spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#blog .blog-content h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #222;
+}
+
+#blog .blog-content p {
+    color: #555;
+    margin: 10px 0 20px;
+}
+
+/* ✨ Read More Button */
+#blog .btn-read-more {
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🚀 Hover Effect */
+#blog .btn-read-more:hover {
+    background: linear-gradient(135deg, #ff9900, #ff6600);
+    transform: scale(1.08);
+    box-shadow: 0px 4px 12px rgba(255, 153, 0, 0.4);
+}
+
+#blog .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+/* Contact Section Styling */
+#contact {
+    padding: 60px 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+/* Section Title */
+#contact h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* Title Divider */
+#contact h2::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: #ffcc00;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Form Container */
+#contactForm {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Input Fields */
+.form-control {
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #ff9900;
+    box-shadow: 0px 0px 10px rgba(255, 153, 0, 0.5);
+}
+
+/* Labels */
+.form-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Submit Button */
+#contactForm button {
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+#contactForm button:hover {
+    background: linear-gradient(45deg, #ff9900, #ff6600);
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(255, 165, 0, 0.4);
+}
+ 
